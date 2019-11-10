@@ -26,6 +26,6 @@ async function sequence() {
   return `sequence is done ${output1} ${output2} ${output3}`
 }
 
-sequence().then(console.log)
-parallel().then(console.log)
-race().then(console.log)
+sequence().then(console.log);
+parallel().then(console.log);
+race().then(console.log);
