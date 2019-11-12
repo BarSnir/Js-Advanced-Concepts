@@ -11,5 +11,5 @@ function fail() {
         return 'failed 😄';
     }
 }
-
+// not working with async code like job-queue or libuv;
 console.log(fail());
