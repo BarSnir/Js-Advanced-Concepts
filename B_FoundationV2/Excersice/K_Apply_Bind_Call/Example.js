@@ -14,10 +14,11 @@ const wizard = {
 }
 const archer = {
     name: 'Robin Hood',
-    helath: 30
+    health: 30
 }
 wizard.heal.call(archer, 50, 80);
 wizard.heal.apply(wizard,[50, 0]);
+wizard.heal(100, 100);
 const healArcher = wizard.heal.bind(archer, 100, 100);
 healArcher();
 
