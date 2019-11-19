@@ -9,12 +9,15 @@ console.log($b);
 let _c = true/false;
 console.log(_c);
 
-const inquirer = require('inquirer')
+const symbol1 = Symbol.for(42);
+console.log(Symbol.keyFor(symbol1));
+
+const inquirer = require('inquirer');
 var questions = [{
   type: 'input',
   name: 'name',
   message: "What's your name?",
-}]
+}];
 inquirer.prompt(questions).then(answers => {
   console.log(`Hi ${answers['name']}!`)
 });

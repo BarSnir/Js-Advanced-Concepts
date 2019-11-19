@@ -29,7 +29,14 @@ console.log(four(4));
 const a = {
     name: 'whooho',
     function: () => {
+        // this.name => bind and undefined;
         console.log('whooho');
+    },
+    fun2() {
+        return this.name;
+    },
+    b: function() {
+        return this.name;
     }
 }
 
